@@ -1,0 +1,419 @@
+*{
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url(images/OIP.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 120vh;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+}
+
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+    z-index: 100;
+}
+.logo{
+        font-size: 30px;
+        color: white;
+        font-weight: 600;
+        transition: 0.3s;
+}
+.logo:hover{
+    color: skyblue;
+    text-shadow: 0 0 25px rgb(0, 238, 255),
+                 0 0 50px  skyblue;
+    transform: scale(1.1);
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content:'';
+    height: 3px;
+    width: 0;
+    background: skyblue;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover:after{
+    width: 100%;
+}
+.user{
+    cursor: pointer;
+    color: skyblue;
+    margin-top: 0px;
+    margin-left: 40px;
+}
+.user a{
+    color:white;
+    background-color: skyblue;
+    border-radius: 10px;
+    padding: 10px 30px;
+}
+.user a:hover{
+    background-color: black;
+    color: skyblue;
+    font-weight: bolder;
+}
+.user i{
+    font-size: 20px;
+    margin-left: 10px;
+    padding: 0px 14px;
+}
+.hero{
+    position: absolute;
+    color: white;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+.inhero{
+    line-height:1.2px;
+}
+.inhero h1{
+    font-size: 40px;
+}
+.inhero p{
+    font-size: 17px;
+}
+span{
+    color: skyblue;
+    font-weight:bold ;
+}
+.line1{
+    height: 2;
+    color: skyblue;
+    width: 12%;
+    margin-left: 0px;
+    margin-top: 0px;
+    position: absolute;
+}
+.poster {
+    margin-top: 130px;
+    margin-right: 150px;
+}
+.poster video{
+    height: 320px;
+    float: right;
+    border-radius: 10px;
+    
+}
+.btn{
+    margin-top: 30px;
+}
+.btn a{
+    color: white;
+    padding: 10px 25px;
+    background-color: skyblue;
+    border-radius: 20px;
+}
+.btn a:hover{
+    background-color: black;
+    color: skyblue;
+}
+
+.latest{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    margin-top: 500px;
+    padding: 0px 0px;
+}
+.latest h1{
+    font-size: 20px;
+    color: skyblue;
+    padding: 4px;
+}
+.container{
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px ;
+}
+.inlatest img{
+    height: 122px;
+    padding: 4px 0px;
+    cursor: pointer;
+    transform: all 500ms ease-in-out;
+    border-radius: 10px;
+}
+.inlatest img:hover{
+    transform: scale(1.2);
+}
+.head{
+    color: white;
+    line-height: 1.5;
+}
+.head h4{
+    font-size: 15px;
+}
+.head h6{
+    font-size: 12px;
+}
+.btn2 {
+    margin-top: -30px;
+    margin-left: 100px;
+}
+.btn2 a{
+    font-size: 13px;
+    background: skyblue;
+    padding: 7px 7px;
+    color: white;
+    border-radius: 10%;
+}
+.anime{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    padding: 4px 0px;
+    color: white;
+    margin-top: 900px;
+}
+.anime h1{
+    font-size: 20px;
+    color: skyblue;
+}
+.animecon{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px;
+}
+.inanime h3{
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 6px;
+}
+.inanime img{
+    height: 250px;
+    border-radius: 10px;
+    transition: all 500ms ease-in-out;
+}
+.inanime img:hover{
+    transform: scale(1.1);
+}
+.action{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    padding: 4px 0px;
+    color: white;
+    margin-top: 1350px;
+}
+.action h1{
+    font-size: 20px;
+    color: skyblue;
+}
+.acor{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px;
+}
+.inaction h3{
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 6px;
+}
+.inaction img{
+    height: 250px;
+    border-radius: 10px;
+    transition: all 500ms ease-in-out;
+}
+.inaction img:hover{
+    transform: scale(1.1);
+}
+.Horror{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    padding: 4px 0px;
+    color: white;
+    margin-top: 1750px;
+}
+.Horror h1{
+    font-size: 20px;
+    color: skyblue;
+}
+.Horrcon{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px;
+}
+.inhorror h3{
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 6px;
+}
+.inhorror img{
+    height: 250px;
+    border-radius: 10px;
+    transition: all 500ms ease-in-out;
+}
+.inhorror img:hover{
+    transform: scale(1.1);
+}
+.More{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    padding: 4px 0px;
+    color: white;
+    margin-top: 2150px;
+}
+.More h1{
+    font-size: 20px;
+    color: skyblue;
+}
+.morecon{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px;
+}
+.inmore h3{
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 6px;
+}
+.inmore img{
+    height: 250px;
+    border-radius: 10px;
+    transition: all 500ms ease-in-out;
+}
+.inmore img:hover{
+    transform: scale(1.1);
+}
+.rec{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    color: white;
+    margin-top: 2700px;
+}
+.you{
+    padding: 10px;
+    line-height: 1.9;
+}
+.you h1{
+    color: skyblue;
+}
+.you p{
+    font-size: 25px;
+}
+.youcon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.youin img{
+    padding: 10px 0px;
+    height: 350px;
+    border-top-right-radius:100px ;
+    border-top-left-radius:100px ;
+}
+.head1 p{
+    font-size: 15px;
+    text-align: center;
+}
+.footer{
+    position: absolute;
+    margin-top: 3460px;
+    height: 20vh;
+    color: white;
+    background: #141414;
+    width: 100%;
+}
+.footerlo h1{
+    color: skyblue;
+    font-size: 25px;
+    margin-top: 40px;
+    margin-left: 120px;
+}
+.footercon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.copy{
+    font-size: 15px;
+    margin-top: 30px;
+    font-weight: 500;
+}
+.social i{
+    font-size: 27px;
+    margin-top: 30px;
+    padding: 0px 4px;
+    color: skyblue;
+}
+.btn4{
+    margin-right: 60px;
+    margin-top: 30px;
+}
+.btn4 a{
+    padding: 10px 25px;
+    color: black;
+    background: skyblue;
+    border-radius: 30px;
+}
+.scrool{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: skyblue;
+    border-radius: 50px;
+    bottom: 100px;
+    right: 50px;
+    font-size: 22px;
+    line-height: 50px;
+    text-align: center;
+}
+
+
+
+
+
+
+
